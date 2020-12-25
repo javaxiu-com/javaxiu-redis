@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>https://www.javaxiu.com</id>
+  <name>JavaXiuRedis</name>
+  <version>1.0</version>
+  <vendor email="javaxiu@javaxiu.com" url="https://www.javaxiu.com">Java秀</vendor>
+
+  <description><![CDATA[
+      <span>JavaXiuRedis客户端<span><br>
+      https://www.javaxiu.com <a href="https://www.javaxiu.com">Java秀</a>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <span>JavaXiuRedis客户端<span><br>
+      https://www.javaxiu.com <a href="https://www.javaxiu.com">Java秀</a>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="tools.javaxiu.redis.action" class="com.javaxiu.JavaXiuRedis" text="JavaXiuRedis">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
